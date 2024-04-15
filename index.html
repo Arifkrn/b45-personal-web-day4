@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <img src="./assets/img/dumbways-logo.png" alt="logo-brand">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li class="active">
+                    <a href="">My Project</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <a href="#">Contact Me</a>
+        </div>
+    </nav>
+    <form action="">
+        <h2>ADD MY PROJECT</h2>
+        <div class="projectName">
+            <label for="projectName">Project Name</label>
+            <input type="text" id="projectName" required>
+        </div>
+        <div class="wrap-date">
+            <div class="startDate">
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate" required>
+            </div>
+            <div class="endDate">
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate" required>
+            </div>
+        </div>
+        <div class="description">
+            <label for="description">Description</label>
+            <textarea name="" id="description" cols="30" rows="10" required></textarea>
+        </div>
+        <div class="technology" id="technology">
+            <label for="">Technology</label>
+            <div class="wrap-technology">
+                <input type="checkbox" name="mycheckbox" id="mycheckbox1" value="nodejs">
+                <label for="nodejs">Node Js</label>
+                <input type="checkbox" name="mycheckbox" id="mycheckbox2" value="nextjs">
+                <label for="nextjs">Next Js</label>
+            </div>
+            <div class="technology-wrap">
+                <input type="checkbox" name="mycheckbox" id="mycheckbox3" value="reactjs">
+                <label for="reactjs">React Js</label>
+                <input type="checkbox" name="mycheckbox" id="mycheckbox4" value="typescript">
+                <label for="typescript">TypeScript</label>
+            </div>
+        </div>
+        <div class="uploadImage">
+            <label for="image">Upload Image</label>
+            <div>
+                <input type="file" id="input-image" required>
+            </div>
+        </div>
+        <div class="btnSubmit">
+            <button type="input" onclick="addProject(event)">Submit</button>
+        </div>
+    </form>
+    <!-- <div class="mylistProject" id="mylistProject"> -->
+        <!-- <h2>My Project</h2> -->
+        <div class="wrap-project" id="wrap-project">
+            <!-- <div class="card">
+                <img src="./assets/img/coding1.jpg" alt="">
+                <div>
+                    <h4>Calculator</h4>
+                    <div class="wrap-date-view">
+                        <p class="dateStart" id="dateStart">kksj</p>
+                        <p class="dateEnd" id="dateEnd">lmls</p>
+                    </div>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis minima reprehenderit repellendus odit. Adipisci, ratione obcaecati! Magni laudantium illum nam, illo cum dolorem, voluptatum reiciendis itaque sint sequi nesciunt sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, beatae reprehenderit ullam et laudantium quos cumque nisi qui rerum enim praesentium tempora cum magnam dolores? Voluptate sed quidem quas odio.</p>
+                </div>
+                <div class="form-technology" id="form-technology">
+                    <a href="https://nodejs.org/en">
+                        <img src="./assets/img/facebook.png" alt="NodeJS">
+                    </a>
+                    <a href="https://nextjs.org/">
+                        <img src="./assets/img/instagram.png" alt="NextJS">
+                    </a>
+                    <a href="https://react.dev/">
+                        <img src="./assets/img/linkedin.png" alt="ReactJS">
+                    </a>
+                    <a href="https://www.typescriptlang.org/">
+                        <img src="./assets/img/twitter.png" alt="Typescript">
+                    </a>
+                </div>
+                <div class="form-button" id="form-button">
+                    <button class="detail">Detail</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </div> -->
+        </div>
+    <!-- </div> -->
+    <!-- <div id="list-project">
+        <img src="" alt="ini adalah gambar project">
+        <h3>Ini adalah Title</h3>
+        <p>(05-04-2024) - (12-04-2024)</p>
+        <p>Durasi : 3 Bulan</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto debitis commodi necessitatibus, dolor maxime
+            distinctio praesentium illum quas cum quisquam modi fugit iure adipisci consequuntur accusamus harum
+            recusandae architecto optio.</p>
+    </div> -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
